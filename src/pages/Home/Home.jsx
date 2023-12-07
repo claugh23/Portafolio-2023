@@ -1,0 +1,104 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
+import React from 'react'
+import './index.css';
+import { Card, Col, Container, Row, Image, Button, Badge } from 'react-bootstrap';
+import ProfileImage from '../../assets/images/ProfilePhoto.jpeg'
+import { useNavigate } from 'react-router-dom';
+import { Footer } from '../Footer/Footer';
+import contents from '../../utils/contents.json';
+import softDevelopment from "../../assets/images/software-development-specialist.jpg"
+export const Home = () => {
+
+  const cloud = ['Aws', 'Azure', 'Clever Cloud', '']
+  const appNavigator = useNavigate();
+
+  const loadProfile = () => {
+    appNavigator('/Perfil')
+  }
+  return (
+    <div className='homePage'>
+      <Container className="my-5">
+        <Row>
+          <Col lg={6} md={12}>
+            <h1 className='text-white text-center'>{contents.home.titulo}</h1>
+            <img
+              src="https://media.licdn.com/dms/image/C5603AQGMREjPFpo0DA/profile-displayphoto-shrink_800_800/0/1657345616673?e=1707350400&v=beta&t=5jcGb5m-9XXfuc14TroB-qgDPByOVFUDlk3nTLS3TcM"
+              alt="Profile"
+              className="img-fluid rounded-circle mx-auto d-flex"
+              width={350}
+            />
+
+            <br />
+            <p className='text-white text-center'>{contents.home.carrera}</p>
+            <p className='text-white' style={{ textAlign: "justify" }}>
+              {contents.home.descripcion}
+            </p>
+
+            <br />
+            <h2 className='text-white'>{contents.home.skills.frontend.titulo}</h2>
+            <div className="d-flex flex-wrap">
+              {contents.home.skills.frontend.stack.map((tech, index) => (
+                <Badge key={index} pill variant="info" className="mr-2 mb-2">
+                  {tech}
+                </Badge>
+              ))}
+            </div>
+            <br />
+            <h2 className='text-white'>{contents.home.skills.backend.titulo}</h2>
+            <div className="d-flex flex-wrap">
+              {contents.home.skills.backend.stack.map((innovation, index) => (
+                <Badge key={index} pill variant="success" className="mr-2 mb-2">
+                  {innovation}
+                </Badge>
+              ))}
+            </div>
+            <br />
+            <h2 className='text-white'>{contents.home.skills.databases.titulo}</h2>
+            <div className="d-flex flex-wrap">
+              {contents.home.skills.databases.stack.map((innovation, index) => (
+                <Badge key={index} pill variant="success" className="mr-2 mb-2">
+                  {innovation}
+                </Badge>
+              ))}
+            </div>
+            <br />
+            <h2 className='text-white'>{contents.home.skills.cloud.titulo}</h2>
+            <div className="d-flex flex-wrap">
+              {contents.home.skills.cloud.stack.map((innovation, index) => (
+                <Badge key={index} pill variant="success" className="mr-2 mb-2">
+                  {innovation}
+                </Badge>
+              ))}
+            </div>
+
+
+          </Col>
+          <hr />
+          <Col lg={6} md={12} className="mt-4 mt-lg-0">
+            
+              <h2 className='text-white'>Que es la automatizacion</h2>
+              <iframe
+                width="100%"
+                height="300"
+                src="https://www.youtube.com/embed/lb70jmD05-U"
+                title="Entendiendo el proceso de automatización de la información - Udla en línea"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+           
+          </Col>
+        </Row>
+
+        <Button variant="primary mt-5" onClick={loadProfile}>Ver mi perfil</Button>
+
+      </Container>
+
+
+      <Footer />
+
+
+    </div>
+
+  )
+}

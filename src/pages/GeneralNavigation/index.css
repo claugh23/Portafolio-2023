@@ -1,0 +1,18 @@
+.social-links {
+    margin-left: 20px;
+    /* Add some spacing to the left of the social links */
+}
+
+.social-links a {
+    text-decoration: none;
+    /* Remove underlines from social links */
+    color: #fff;
+    /* Set the color of the links to white */
+    margin-right: 10px;
+    /* Add spacing between individual social links */
+}
+
+.social-links a i {
+    font-size: 24px;
+    /* Adjust the size of the icons as needed */
+}
