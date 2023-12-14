@@ -7,21 +7,21 @@
             "frontend": {
                 "titulo": "Front End",
                 "stack": [
-                    "html",
-                    "css",
-                    "js",
-                    "react",
-                    "angular"
+                    "Html",
+                    "Css",
+                    "Javascript",
+                    "React",
+                    "Angular"
                 ]
             },
             "backend": {
                 "titulo": "Back end",
                 "stack": [
-                    "java",
-                    "csharp",
-                    "python",
-                    "asp",
-                    "spring"
+                    "Java",
+                    "Csharp",
+                    "Python",
+                    "Asp.net Core",
+                    "Spring Boot"
                 ]
             },
             "databases":{
@@ -41,10 +41,32 @@
                     "Azure",
                     "Clever Cloud",
                     "Heroku",
-                    "Github",
-                    "GitLab"
+                    "Fly IO"
+                   
+                ]
+            },
+            "virtualization":{
+                "titulo":"Virtual Containers",
+                "stack": [
+                    "Kubernetes",
+                    "Docker",
+                    "Red Hat",
+                    "Azure Containers",
+                    "VM Workspace"
+                ]
+            },
+            "automatizacion":{
+                "titulo":"Automation",
+                "stack": [
+                    "Aws",
+                    "Azure",
+                    "Clever Cloud",
+                    "Heroku",
+                    "Github"
+                    
                 ]
             }
+           
         }
     },
     "perfil": {},
