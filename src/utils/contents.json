@@ -34,17 +34,6 @@
                     "Cassandra DB"
                 ]
             },
-            "cloud":{
-                "titulo":"Cloud Computing",
-                "stack": [
-                    "Aws",
-                    "Azure",
-                    "Clever Cloud",
-                    "Heroku",
-                    "Fly IO"
-                   
-                ]
-            },
             "virtualization":{
                 "titulo":"Virtual Containers",
                 "stack": [
@@ -56,7 +45,7 @@
                 ]
             },
             "automatizacion":{
-                "titulo":"Automation",
+                "titulo":"Automation and Cloud Computing",
                 "stack": [
                     "Aws",
                     "Azure",
