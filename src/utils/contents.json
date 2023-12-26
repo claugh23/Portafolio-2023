@@ -34,6 +34,17 @@
                     "Cassandra DB"
                 ]
             },
+            "cloud":{
+                "titulo":"Cloud Computing",
+                "stack": [
+                    "Aws",
+                    "Azure",
+                    "Clever Cloud",
+                    "Heroku",
+                    "Fly IO"
+                   
+                ]
+            },
             "virtualization":{
                 "titulo":"Virtual Containers",
                 "stack": [
