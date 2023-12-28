@@ -17,7 +17,7 @@ export const GeneralNavigation = () => {
                     <Nav className="ml-auto mx-auto">
                         <Nav.Link href="/">INICIO </Nav.Link>
                         <Nav.Link href="/Perfil">MI PERFIL</Nav.Link>
-                        <Nav.Link href="/Stack">STACK</Nav.Link>
+                        <Nav.Link href="/Stack">TECNOLOGIAS</Nav.Link>
                         <Nav.Link href="/Proyectos">PROYECTOS</Nav.Link>
                         <Nav.Link href="/Contactame">CONTACTAME</Nav.Link>
                         <Nav.Link target='_blank' href="https://www.facebook.com/webdeveloperscr"> <img src={facebookIcon} alt="facebook account"
