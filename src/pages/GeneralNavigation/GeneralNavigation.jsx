@@ -16,7 +16,7 @@ export const GeneralNavigation = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto mx-auto">
                         <Nav.Link href="/">INICIO </Nav.Link>
-                        <Nav.Link href="/Perfil">MI PERFIL</Nav.Link>
+                        <Nav.Link href="/Perfil">PERFIL PROFESIONAL</Nav.Link>
                         <Nav.Link href="/Stack">TECNOLOGIAS</Nav.Link>
                         <Nav.Link href="/Proyectos">PROYECTOS</Nav.Link>
                         <Nav.Link href="/Contactame">CONTACTAME</Nav.Link>

@@ -51,7 +51,7 @@ export const AboutMe = () => {
     <Container className="generalContainer">
       <Row>
         <Col>
-          <h2 className="text-white mt-4">Mi Perfil</h2>
+          <h2 className="text-white mt-4">Experiencia Profesional Actual</h2>
         </Col>
       </Row>
       <Row>
