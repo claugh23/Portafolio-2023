@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
+import {sendContactInfo} from "../../services/sendEmailForm";
+
 export const ContactMe = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -11,15 +13,29 @@ export const ContactMe = () => {
     message: '',
   });
 
+  const [sendButton,setSendButton] = useState(false);
+
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
   const handleSubmit = (e) => {
+    setSendButton(true);
     e.preventDefault();
     // Add your form submission logic here
-    console.log('Form data submitted:', formData);
+    sendContactInfo(formData)
+    .then((successMessage) => {
+     
+        alert("Mensaje Enviado!!!")
+    })
+    .catch((errorMessage) => {
+        console.error(errorMessage);
+    });
+
+   
+    
   };
 
   return (
@@ -99,7 +115,7 @@ export const ContactMe = () => {
           />
         </Form.Group>
         <br />
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" disabled={sendButton}>
           Submit
         </Button>
       </Form>
