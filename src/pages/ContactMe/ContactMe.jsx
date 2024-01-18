@@ -46,10 +46,11 @@ export const ContactMe = () => {
           <Form.Label className='text-white'>Nombre</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter your name"
+            placeholder="Tu nombre"
             name="name"
             value={formData.name}
             onChange={handleChange}
+            required
           />
         </Form.Group>
         <br />
@@ -57,10 +58,11 @@ export const ContactMe = () => {
           <Form.Label className='text-white'>Apellidos</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter your lastname"
+            placeholder="Tus apellidos"
             name="lastname"
             value={formData.lastname}
             onChange={handleChange}
+            required
           />
         </Form.Group>
         <br />
@@ -68,10 +70,11 @@ export const ContactMe = () => {
           <Form.Label className='text-white'>Correo Electronico</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Enter your email address"
+            placeholder="Tu Correo Electronico"
             name="email"
             value={formData.email}
             onChange={handleChange}
+            required
           />
         </Form.Group>
         <br />
@@ -79,10 +82,11 @@ export const ContactMe = () => {
           <Form.Label className='text-white'>Telefono</Form.Label>
           <Form.Control
             type="tel"
-            placeholder="Enter your phone number"
+            placeholder="Tu telefono"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
+            required
           />
         </Form.Group>
         <br />
@@ -93,6 +97,7 @@ export const ContactMe = () => {
             name="topic"
             value={formData.topic}
             onChange={handleChange}
+            required
           >
             <option value="" disabled>Selecciona un tema</option>
             <option value="Pregunta General">Pregunta General</option>
@@ -108,10 +113,11 @@ export const ContactMe = () => {
           <Form.Control
             as="textarea"
             rows={3}
-            placeholder="Enter your message"
+            placeholder="Cuentame como puedo ayudarte"
             name="message"
             value={formData.message}
             onChange={handleChange}
+            required
           />
         </Form.Group>
         <br />
