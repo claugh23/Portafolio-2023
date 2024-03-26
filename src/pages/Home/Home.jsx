@@ -19,7 +19,7 @@ export const Home = () => {
           <Col lg={12} md={12}>
             <h1 className="text-white text-center">{contents.home.titulo}</h1>
             <img
-              src={ProfileImage}
+             src={ProfileImage}
               alt="Profile"
               className="img-fluid rounded-circle mx-auto d-flex"
               width={350}
