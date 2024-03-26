@@ -19,7 +19,7 @@ export const Home = () => {
           <Col lg={12} md={12}>
             <h1 className="text-white text-center">{contents.home.titulo}</h1>
             <img
-              src="https://media.licdn.com/dms/image/C5603AQGMREjPFpo0DA/profile-displayphoto-shrink_800_800/0/1657345616673?e=1707350400&v=beta&t=5jcGb5m-9XXfuc14TroB-qgDPByOVFUDlk3nTLS3TcM"
+              src={ProfileImage}
               alt="Profile"
               className="img-fluid rounded-circle mx-auto d-flex"
               width={350}
