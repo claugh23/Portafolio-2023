@@ -7,6 +7,7 @@ import { Home } from '../pages/Home/Home'
 import { TecnologiesStack } from '../pages/TecnologiesStack/TecnologiesStack'
 import { Websites } from '../pages/Websites/Websites'
 import { ContactMe } from '../pages/ContactMe/ContactMe'
+import { ServiciosWeb } from '../pages/ServiciosWeb/ServiciosWeb'
 
 const appRoutes = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const appRoutes = createBrowserRouter([
   {
     path: '/Contactame',
     element: <ContactMe />
+  },
+  {
+    path:'/Servicios-Web',
+    element: <ServiciosWeb/>
   }
 ])
 
