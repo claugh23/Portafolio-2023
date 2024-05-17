@@ -1,57 +1,58 @@
 import React from "react";
 import { Container,Col,Row,Card,Button } from "react-bootstrap";
 const packages = [
-    {
-      title: 'Paquete Básico',
-      price: '$150',
-      description: 'Ideal para sitios web personales o de pequeñas empresas.',
-      features: [
-        'Soporte técnico por 30 días',
-        'Inclusión de dominio en GoDaddy',
-        'Hosting en Netlify',
-        'Plantillas profesionales',
-        'Hasta 5 páginas',
-        'Integración con redes sociales',
-        'Optimización SEO básica',
-        'Tiempo de entrega: 5 días hábiles'
-      ]
-    },
-    {
-      title: 'Paquete Estándar',
-      price: '$300',
-      description: 'Perfecto para empresas que buscan una presencia en línea más sólida.',
-      features: [
-        'Soporte técnico por 60 días',
-        'Inclusión de dominio en GoDaddy',
-        'Hosting en Netlify',
-        'Diseño personalizado y funcionalidades avanzada',
-        'Hasta 10 páginas',
-        'Integración con redes sociales',
-        'Optimización SEO básica',
-        'Tiempo de entrega: 12 días hábiles'
-      ]
-    },
-    {
-      title: 'Paquete Premium',
-      price: '$600',
-      description: 'Para empresas que desean una presencia en línea completa y profesional.',
-      features: [
-        'Soporte técnico por 90 días',
-        'Registro de dominio gratuito en GoDaddy',
-        'Hosting en Netlify',
-        'Diseño personalizado y funcionalidades avanzadas',
-        'Hasta 20 páginas',
-        'Optimización SEO avanzada',
-        'Integración con redes sociales',
-        'Tiempo de entrega: 25 días hábiles'
-      ]
-    }
-  ];
+  {
+    "title": "Basic Package",
+    "price": "$150",
+    "description": "Ideal for personal websites or small businesses.",
+    "features": [
+      "Technical support for 30 days",
+      "Domain inclusion on GoDaddy",
+      "Hosting on Netlify",
+      "Professional templates",
+      "Up to 5 pages",
+      "Social media integration",
+      "Basic SEO optimization",
+      "Delivery time: 5 business days"
+    ]
+  },
+  {
+    "title": "Standard Package",
+    "price": "$300",
+    "description": "Perfect for companies seeking a stronger online presence.",
+    "features": [
+      "Technical support for 60 days",
+      "Domain inclusion on GoDaddy",
+      "Hosting on Netlify",
+      "Custom design and advanced functionalities",
+      "Up to 10 pages",
+      "Social media integration",
+      "Basic SEO optimization",
+      "Delivery time: 12 business days"
+    ]
+  },
+  {
+    "title": "Premium Package",
+    "price": "$600",
+    "description": "For companies that want a complete and professional online presence.",
+    "features": [
+      "Technical support for 90 days",
+      "Free domain registration on GoDaddy",
+      "Hosting on Netlify",
+      "Custom design and advanced functionalities",
+      "Up to 20 pages",
+      "Advanced SEO optimization",
+      "Social media integration",
+      "Delivery time: 25 business days"
+    ]
+  }
+]
+
 
 export const ServiciosWeb = () => {
   return (
     <Container className="py-4">
-    <h1 className="text-center mb-4 text-white">Te ofrezco estos paquetes para la creacion de tu sitio web</h1>
+    <h1 className="text-center mb-4 text-white">I offer you these packages for the creation of your website</h1>
     <Row>
       {packages.map((pkg, index) => (
         <Col key={index} md={4}>
@@ -59,7 +60,7 @@ export const ServiciosWeb = () => {
             <Card.Body>
               <Card.Title>{pkg.title}</Card.Title>
               <Card.Text>
-                <p className="font-weight-bold text-primary">Precio: {pkg.price}</p>
+                <p className="font-weight-bold text-primary">Price: {pkg.price}</p>
                 <p>{pkg.description}</p>
                 <ul>
                   {pkg.features.map((feature, featureIndex) => (

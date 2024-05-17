@@ -28,7 +28,7 @@ export const Home = () => {
             <br />
             <p className="text-white text-center">{contents.home.carrera}</p>
             <Button variant="primary mt-5 mb-3 mx-auto" onClick={loadProfile}>
-              Ver mi perfil
+              View my profile
             </Button>
             <p className="text-white" style={{ textAlign: "justify" }}>
               {contents.home.descripcion}
@@ -78,19 +78,7 @@ export const Home = () => {
             </div>
           </Col>
           <hr />
-          <Col lg={6} md={12} className="mt-4 mt-lg-0">
-            <h2 className="text-white">Porque es importante la automatizacion de procesos</h2>
-            <br />
-            <iframe
-              width="100%"
-              height="300"
-              src="https://www.youtube.com/embed/lb70jmD05-U"
-              title="Entendiendo el proceso de automatización de la información - Udla en línea"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </Col>
+          
         </Row>
       </Container>
     </div>

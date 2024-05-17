@@ -2,13 +2,14 @@
 import React from "react";
 import "./index.css";
 import { Row, Card, Col, Container } from "react-bootstrap";
+import { FaBriefcase, FaLaptopCode, FaCloud } from 'react-icons/fa';
 
 export const AboutMe = () => {
   const experienciaLaboral = [
     {
-      puesto: "IT Manager and Software Developer",
+      puesto: "IT Support Manager and Software Developer",
       empresa: "Marian Baker School",
-      fecha: "Enero 2019 - Octubre 2021",
+      fecha: "January 2019 - October 2021",
       funciones: [
         "Network infrastructure configuration and administration with Cisco AP",
         "Configuration and administration of servers with active network services and SQL Server databases.",
@@ -20,9 +21,9 @@ export const AboutMe = () => {
       ],
     },
     {
-      puesto: "Full Stack Developer",
+      puesto: "Java full stack developer",
       empresa: "IBM Consulting Costa Rica",
-      fecha: "Noviembre 2021 - Presente",
+      fecha: "November 2021 - Present",
       funciones: [
         "Front end development with html, CSS and JavaScript with React JS",
         "Web Design Solutions for Cloud Environments",
@@ -35,38 +36,43 @@ export const AboutMe = () => {
   ];
 
   const habilidades = [
-    "React",
-    "JavaScript",
     "HTML",
     "CSS",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "Redux",
-    "Git",
-    "Responsive Design",
+    "JAVASCRIPT",
+    "JAVA",
+    "C#",
+    "REACT JS",
+    "SPRING BOOT",
+    "ASP NET CORE",
+    "MS SQL SERVER",
+    "MYSQL",
+    "MONGO DB",
+    "GIT",
+    "AZURE",
+    "AWS",
+    "CICD"
   ];
 
   return (
-    <Container className="generalContainer">
-      <Row>
+    <Container className="generalContainer my-5">
+      <Row className="text-center mb-4">
         <Col>
-          <h2 className="text-white mt-4">Experiencia Profesional Actual</h2>
+          <h2 className="text-primary">Current Experience</h2>
         </Col>
       </Row>
       <Row>
         <Col md={12}>
-          <Card>
+          <Card className="shadow-lg">
             <Card.Body>
-              <Card.Title>Experiencia Laboral</Card.Title>
+             
               {experienciaLaboral.map((experiencia, index) => (
-                <Card key={index} className="mb-2">
+                <Card key={index} className="mb-4 border-primary">
                   <Card.Body>
-                    <Card.Title>{experiencia.puesto}</Card.Title>
+                    <Card.Title className="text-success">{experiencia.puesto}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">
                       {experiencia.empresa}
                     </Card.Subtitle>
-                    <Card.Text>{experiencia.fecha}</Card.Text>
+                    <Card.Text><strong>{experiencia.fecha}</strong></Card.Text>
                     <ul>
                       {experiencia.funciones.map((funcion, i) => (
                         <li key={i}>{funcion}</li>
@@ -78,7 +84,26 @@ export const AboutMe = () => {
             </Card.Body>
           </Card>
         </Col>
-       
+      </Row>
+      <Row className="mt-5">
+        <Col md={12}>
+          <Card className="shadow-lg">
+            <Card.Body>
+              <Card.Title className="text-secondary"><FaLaptopCode /> Skills</Card.Title>
+              <Row>
+                {habilidades.map((habilidad, index) => (
+                  <Col key={index} xs={6} md={4} className="mb-2">
+                    <Card className="border-light">
+                      <Card.Body className="text-center">
+                        <Card.Text>{habilidad}</Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
     </Container>
   );

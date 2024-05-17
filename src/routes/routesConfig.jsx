@@ -18,10 +18,10 @@ const appRoutes = createBrowserRouter([
     path: '/Perfil',
     element: <AboutMe />
   },
-  {
-    path: '/Stack',
-    element: <TecnologiesStack />
-  },
+  // {
+  //   path: '/Stack',
+  //   element: <TecnologiesStack />
+  // },
   {
     path: '/Proyectos',
     element: <Websites />

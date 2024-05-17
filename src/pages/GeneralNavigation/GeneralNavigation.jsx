@@ -15,12 +15,12 @@ export const GeneralNavigation = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto mx-auto">
-                        <Nav.Link href="/">INICIO </Nav.Link>
-                        <Nav.Link href="/Perfil">PERFIL PROFESIONAL</Nav.Link>
-                        <Nav.Link href="/Stack">TECNOLOGIAS</Nav.Link>
-                        <Nav.Link href="/Proyectos">PROYECTOS</Nav.Link>
-                        <Nav.Link href="/Servicios-Web">CONSTRUYAMOS TU WEB</Nav.Link>
-                        <Nav.Link href="/Contactame">CONTACTAME</Nav.Link>
+                        <Nav.Link href="/">HOME </Nav.Link>
+                        <Nav.Link href="/Perfil">MY PROFILE</Nav.Link>
+                        {/* <Nav.Link href="/Stack">TECNOLOGIES</Nav.Link> */}
+                        <Nav.Link href="/Proyectos">PROYECTS</Nav.Link>
+                        <Nav.Link href="/Servicios-Web">OFFERS</Nav.Link>
+                        <Nav.Link href="/Contactame">CONTACT ME</Nav.Link>
                         <Nav.Link target='_blank' href="https://www.facebook.com/webdeveloperscr"> <img src={facebookIcon} alt="facebook account"
                             width="30"
                             height="30" /></Nav.Link>
