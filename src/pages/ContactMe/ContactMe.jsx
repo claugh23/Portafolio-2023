@@ -33,8 +33,6 @@ export const ContactMe = () => {
     .catch((errorMessage) => {
         console.error(errorMessage);
     });
-
-   
     
   };
 

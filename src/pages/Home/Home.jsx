@@ -4,7 +4,6 @@ import { Col, Container, Row, Image, Button, Badge } from "react-bootstrap";
 import ProfileImage from "../../assets/images/ProfilePhoto.jpeg";
 import { useNavigate } from "react-router-dom";
 import contents from "../../utils/contents.json";
-import softDevelopment from "../../assets/images/software-development-specialist.jpg";
 export const Home = () => {
   const cloud = ["Aws", "Azure", "Clever Cloud"];
   const appNavigator = useNavigate();
