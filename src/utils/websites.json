@@ -11,7 +11,7 @@
     },
     {
         "title": "Marian Baker School Site",
-        "image": "/src/assets/websites/web4.png",
+        "image": "./src/assets/websites/web4.png",
         "url": "https://mbs-webpage-2021.netlify.app/",
         "description": "This website was developed as an initiative to improve Marian Baker School's current webpage, aiming to give the institution a new online image and overall web presence with easier maintainability and long-term improvement capabilities.",
         "technologies": [
