@@ -1,13 +1,20 @@
 import React from "react";
 import { Container, Row, Col, Card, Badge, Accordion } from "react-bootstrap";
 //import websitesData from "../../utils/websites.json"; // Assuming your JSON file is named websitesData.json
+import image1 from "../../assets/websites/web1.png";
+import image2 from "../../assets/websites/web2.png";
+import image3 from "../../assets/websites/web3.png";
+import image4 from "../../assets/websites/web4.png";
+import image5 from "../../assets/websites/web5.png";
+import image6 from "../../assets/websites/web6.png"
+import image7 from "../../assets/websites/web7.png";
 
 export const Websites = () => {
 
   const websitesData =[
     {
         "title": "All on Six Costa Rica Site",
-        "image": "src/assets/websites/web3.png",
+        "image": {image3},
         "url": "https://www.allonsixcostarica.com/",
         "description": "This website was developed freelance for a dental clinic in Sabana Norte. It is an informational site for potential clients needing information about the clinic and includes a contact form to request general information.",
         "technologies": [
@@ -17,7 +24,7 @@ export const Websites = () => {
     },
     {
         "title": "Marian Baker School Site",
-        "image": "src/assets/websites/web4.png",
+        "image": {image4},
         "url": "https://mbs-webpage-2021.netlify.app/",
         "description": "This website was developed as an initiative to improve Marian Baker School's current webpage, aiming to give the institution a new online image and overall web presence with easier maintainability and long-term improvement capabilities.",
         "technologies": [
@@ -27,7 +34,7 @@ export const Websites = () => {
     },
     {
         "title": "Somos Goes Ulacit Site",
-        "image": "src/assets/websites/web6.png",
+        "image": {image6},
         "url": "https://somosgoesulacit.netlify.app/",
         "description": "This website was developed as an internal project for Ulacit's student government during the 2021-2022 period, in collaboration with members of the Computer Engineering faculty and the party's board of directors.",
         "technologies": [
@@ -37,7 +44,7 @@ export const Websites = () => {
     },
     {
         "title": "Tickets Support App",
-        "image": "src/assets/websites/web5.png",
+       "image": {image5},
         "url": "https://tickets-support-app.netlify.app/TicketsAppLogin",
         "description": "This website was developed as an initiative to automate the technical support ticket processes for internal clients of Marian Baker School. The system is a web development from scratch under the MVC development architecture applied with Angular and using a Rest API server with ASP.NET Core 6.0.",
         "technologies": [
@@ -61,7 +68,7 @@ export const Websites = () => {
     },
     {
         "title": "Tico Net Games App",
-        "image": "src/assets/websites/web2.png",
+        "image": {image2},
         "url": "https://ticonetgamesulacit.netlify.app/",
         "description": "This website was developed as part of the final project for the software design course. This site simulates an online video game store prototype similar to Steam, Epic Games, Ubisoft, etc. It was developed with Angular 14 and implements a Rest API with Spring Boot and MongoDB as the database.",
         "technologies": [
@@ -82,7 +89,7 @@ export const Websites = () => {
     },
     {
         "title": "Fut Tico Canchas App",
-        "image": "src/assets/websites/web1.png",
+        "image": {image1},
         "url": "https://fut-tico-canchas-v1.netlify.app/",
         "description": "This application is currently in development, but its purpose is for people who want to organize a soccer match and don't have a field, to search and reserve the nearest field in their area and manage the request automatically. This app implements React JS, Rest API with Spring Boot, and MongoDB databases.",
         "technologies": [
@@ -102,7 +109,7 @@ export const Websites = () => {
     },
     {
         "title": "Taller Mecanico App",
-        "image": "src/assets/websites/web7.png",
+        "image": {image7},
         "url": "https://taller-mecanico-web-ui-beta.onrender.com/",
         "description": "This application is currently in development, but I will help to vehicles business to control their duties day by day and keep their clients updated about their issues of their cars",
         "technologies": [
