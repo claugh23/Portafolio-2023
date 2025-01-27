@@ -6,7 +6,7 @@ import image2 from "../../assets/websites/web2.png";
 import image3 from "../../assets/websites/web3.png";
 import image4 from "../../assets/websites/web4.png";
 import image5 from "../../assets/websites/web5.png";
-import image6 from "../../assets/websites/web6.png"
+import image6 from "../../assets/websites/web6.png";
 import image7 from "../../assets/websites/web7.png";
 
 export const Websites = () => {
@@ -14,7 +14,7 @@ export const Websites = () => {
   const websitesData =[
     {
         "title": "All on Six Costa Rica Site",
-        "image": {image3},
+        "image": "../../assets/websites/web3.png",
         "url": "https://www.allonsixcostarica.com/",
         "description": "This website was developed freelance for a dental clinic in Sabana Norte. It is an informational site for potential clients needing information about the clinic and includes a contact form to request general information.",
         "technologies": [
@@ -147,7 +147,7 @@ export const Websites = () => {
               <Card>
                 <Row>
                   <Col md={6}>
-                    <Card.Img variant="top" src={website.image} className="img-fluid" />
+                    <Card.Img variant="top" src={JSON.stringify(website.image)} className="img-fluid" />
                   </Col>
                   <Col md={6}>
                     <Card.Body>
