@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { Col, Container, Row, Image, Button, Badge } from "react-bootstrap";
-import ProfileImage from "../../assets/images/ProfilePhoto.jpeg";
+import ProfileImage from "/assets/images/ProfilePhoto.jpeg";
 import { useNavigate } from "react-router-dom";
 import contents from "../../utils/contents.json";
 export const Home = () => {

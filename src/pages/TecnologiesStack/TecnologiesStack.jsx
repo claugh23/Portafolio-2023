@@ -3,35 +3,35 @@ import React from "react";
 import { Container, Row, Card, Col, ListGroup } from "react-bootstrap";
 import contentStack from "../../utils/contents.json";
 
-import iconReact from "../../assets/frontend/react.png";
-import iconAngular from "../../assets/frontend/angular.png";
-import iconHtml from "../../assets/frontend/html-5.png";
-import iconCss from "../../assets/frontend/css-3.png";
-import iconJs from "../../assets/frontend/js.png";
+import iconReact from "/assets/frontend/react.png";
+import iconAngular from "/assets/frontend/angular.png";
+import iconHtml from "/assets/frontend/html-5.png";
+import iconCss from "/assets/frontend/css-3.png";
+import iconJs from "/assets/frontend/js.png";
 
-import iconcsharp from "../../assets/backend/cSharp.png";
-import iconjava from "../../assets/backend/Java.png";
-import iconpython from "../../assets/backend/python.png";
-import iconasp from "../../assets/backend/asp.png";
-import iconspring from "../../assets/backend/springboot.png";
+import iconcsharp from "/assets/backend/cSharp.png";
+import iconjava from "/assets/backend/Java.png";
+import iconpython from "/assets/backend/python.png";
+import iconasp from "/assets/backend/asp.png";
+import iconspring from "/assets/backend/springboot.png";
 
-import iconaws from "../../assets/Cloud/aws.png";
-import iconazure from "../../assets/Cloud/azure.jpg";
-import iconclever from "../../assets/Cloud/clever.jpg";
-import icongit from "../../assets/Cloud/git.png";
-import iconheroku from "../../assets/Cloud/heroku.png";
+import iconaws from "/assets/Cloud/aws.png";
+import iconazure from "/assets/Cloud/azure.jpg";
+import iconclever from "/assets/Cloud/clever.jpg";
+import icongit from "/assets/Cloud/git.png";
+import iconheroku from "/assets/Cloud/heroku.png";
 
-import iconcassandra from "../../assets/Databases/cassandra.png";
-import iconfirebase from "../../assets/Databases/firebase.jpg";
-import iconmongo from "../../assets/Databases/mongo.jpg";
-import iconmysql from "../../assets/Databases/mysql.png";
-import iconmsserver from "../../assets/Databases/sqlserver.png";
+import iconcassandra from "/assets/Databases/cassandra.png";
+import iconfirebase from "/assets/Databases/firebase.jpg";
+import iconmongo from "/assets/Databases/mongo.jpg";
+import iconmysql from "/assets/Databases/mysql.png";
+import iconmsserver from "/assets/Databases/sqlserver.png";
 
-import iconkubernetes from "../../assets/automation/Kubernetes.png";
-import icondocker from "../../assets/automation/Docker.png";
-import iconredhat from "../../assets/automation/Red Hat.png";
-import iconcontainer from "../../assets/automation/containers.png";
-import iconvmware from "../../assets/automation/vmware.png";
+import iconkubernetes from "/assets/automation/Kubernetes.png";
+import icondocker from "/assets/automation/Docker.png";
+import iconredhat from "/assets/automation/Red Hat.png";
+import iconcontainer from "/assets/automation/containers.png";
+import iconvmware from "/assets/automation/vmware.png";
 
 export const TecnologiesStack = () => {
 

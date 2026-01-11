@@ -1,20 +1,20 @@
 import React from "react";
 import { Container, Row, Col, Card, Badge, Accordion } from "react-bootstrap";
-//import websitesData from "../../utils/websites.json"; // Assuming your JSON file is named websitesData.json
-import image1 from "../../assets/websites/web1.png";
-import image2 from "../../assets/websites/web2.png";
-import image3 from "../../assets/websites/web3.png";
-import image4 from "../../assets/websites/web4.png";
-import image5 from "../../assets/websites/web5.png";
-import image6 from "../../assets/websites/web6.png";
-import image7 from "../../assets/websites/web7.png";
+//import websitesData from "public/assetsutils/websites.json"; // Assuming your JSON file is named websitesData.json
+import image1 from "/assets/websites/web1.png";
+import image2 from "/assets/websites/web2.png";
+import image3 from "/assets/websites/web3.png";
+import image4 from "/assets/websites/web4.png";
+import image5 from "/assets/websites/web5.png";
+import image6 from "/assets/websites/web6.png";
+import image7 from "/assets/websites/web7.png";
 
 export const Websites = () => {
 
   const websitesData =[
     {
         "title": "All on Six Costa Rica Site",
-        "image": "../../assets/websites/web3.png",
+        "image": "/assets/websites/web3.png",
         "url": "https://www.allonsixcostarica.com/",
         "description": "This website was developed freelance for a dental clinic in Sabana Norte. It is an informational site for potential clients needing information about the clinic and includes a contact form to request general information.",
         "technologies": [
