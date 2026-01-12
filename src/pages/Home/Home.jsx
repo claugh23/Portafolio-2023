@@ -1,83 +1,90 @@
-import React from "react";
 import "./index.css";
-import { Col, Container, Row, Image, Button, Badge } from "react-bootstrap";
+import { Col, Container, Row, Button, Badge } from "react-bootstrap";
 import ProfileImage from "/assets/images/ProfilePhoto.jpeg";
 import { useNavigate } from "react-router-dom";
 import contents from "../../utils/contents.json";
+
 export const Home = () => {
-  const cloud = ["Aws", "Azure", "Clever Cloud"];
   const appNavigator = useNavigate();
 
   const loadProfile = () => {
     appNavigator("/Perfil");
   };
+
+  const SkillSection = ({ title, skills, variant }) => (
+    <div className="mb-5">
+      <h2 className="text-white mb-3 fw-bold">{title}</h2>
+      <div className="d-flex flex-wrap gap-2">
+        {skills.map((skill, index) => (
+          <Badge key={index} pill variant={variant} className="px-3 py-2 fs-6">
+            {skill}
+          </Badge>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
-    <div className="homePage">
-      <Container className="">
-        <Row className="mx-auto">
-          <Col lg={12} md={12}>
-            <h1 className="text-white text-center">{contents.home.titulo}</h1>
+    <div className="homePage min-vh-100 py-5">
+      <Container>
+        <Row className="align-items-center justify-content-center">
+          <Col lg={10} className="text-center">
+            {/* Header */}
+            <h1 className="text-white mb-4 fw-bold" style={{ fontSize: "3rem" }}>
+              {contents.home.titulo}
+            </h1>
+
+            {/* Profile Image */}
             <img
-             src={ProfileImage}
+              src={ProfileImage}
               alt="Profile"
-              className="img-fluid rounded-circle mx-auto d-flex"
-              width={350}
+              className="img-fluid rounded-circle mb-4 shadow"
+              width={280}
+              style={{ border: "4px solid #0d6efd" }}
             />
-         
-            <br />
-            <p className="text-white text-center">{contents.home.carrera}</p>
-            <Button variant="primary mt-5 mb-3 mx-auto" onClick={loadProfile}>
+
+            {/* Title & CTA */}
+            <p className="text-white-50 mb-3" style={{ fontSize: "1.2rem" }}>
+              {contents.home.carrera}
+            </p>
+            <Button
+              variant="primary"
+              size="lg"
+              className="mb-5"
+              onClick={loadProfile}
+            >
               View my profile
             </Button>
-            <p className="text-white" style={{ textAlign: "justify" }}>
+
+            {/* Description */}
+            <p className="text-white-50 mb-5 lh-lg" style={{ textAlign: "justify", fontSize: "1rem" }}>
               {contents.home.descripcion}
             </p>
 
-            <br />
-            <h2 className="text-white">
-              {contents.home.skills.frontend.titulo}
-            </h2>
-            <div className="d-flex flex-wrap">
-              {contents.home.skills.frontend.stack.map((tech, index) => (
-                <Badge key={index} pill variant="info" className="mr-2 mb-2">
-                  {tech}
-                </Badge>
-              ))}
-            </div>
-            <br />
-            <h2 className="text-white">
-              {contents.home.skills.backend.titulo}
-            </h2>
-            <div className="d-flex flex-wrap">
-              {contents.home.skills.backend.stack.map((innovation, index) => (
-                <Badge key={index} pill variant="success" className="mr-2 mb-2">
-                  {innovation}
-                </Badge>
-              ))}
-            </div>
-            <br />
-            <h2 className="text-white">
-              {contents.home.skills.databases.titulo}
-            </h2>
-            <div className="d-flex flex-wrap">
-              {contents.home.skills.databases.stack.map((innovation, index) => (
-                <Badge key={index} pill variant="success" className="mr-2 mb-2">
-                  {innovation}
-                </Badge>
-              ))}
-            </div>
-            <br />
-            <h2 className="text-white">{contents.home.skills.cloud.titulo}</h2>
-            <div className="d-flex flex-wrap">
-              {contents.home.skills.cloud.stack.map((innovation, index) => (
-                <Badge key={index} pill variant="success" className="mr-2 mb-2">
-                  {innovation}
-                </Badge>
-              ))}
-            </div>
+            <hr className="my-5 border-secondary" />
+
+            {/* Skills Sections */}
+            <SkillSection
+              title={contents.home.skills.frontend.titulo}
+              skills={contents.home.skills.frontend.stack}
+              variant="info"
+            />
+            <SkillSection
+              title={contents.home.skills.backend.titulo}
+              skills={contents.home.skills.backend.stack}
+              variant="success"
+            />
+            <SkillSection
+              title={contents.home.skills.databases.titulo}
+              skills={contents.home.skills.databases.stack}
+              variant="warning"
+            />
+            <SkillSection
+              title={contents.home.skills.cloud.titulo}
+              skills={contents.home.skills.cloud.stack}
+              variant="danger"
+            />
           </Col>
-          <hr />
-          
         </Row>
       </Container>
     </div>
